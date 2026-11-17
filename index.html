@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="progress.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Progress</title>
+</head>
+<body>
+    <main>
+        <section class="progress_container">
+            <h1>Progress</h1>
+            <section class="arc_container">
+                <svg width="120" height="120" viewBox="0 0 120 120">
+                    <circle
+                        cx="60"
+                        cy="60"
+                        r="50"
+                        fill="none"
+                        stroke="#eef3f6"
+                        stroke-width="8"/>
+                    <circle
+                        class="progress_arc"
+                        cx="60"
+                        cy="60"
+                        r="50"
+                        fill="none"
+                        stroke="blue"
+                        stroke-width="8"
+                        pathLength="100"
+                        stroke-dasharray="0 100"
+                        transform="rotate(-90 60 60)"/>
+                </svg>
+            </section>
+        </section>
+        <section class="settings_container">
+            <label class="setting">
+                <input type="number" min="0" max="100" value="0" class="value_number">
+                Value
+            </label>
+            <label class="setting">
+                <input type="checkbox" class="animation">
+                Animate
+            </label>
+            <label class="setting">
+                <input type="checkbox" class="hide">
+                Hide
+            </label>
+        </section>
+    </main>
+    
+</body>
+</html>
